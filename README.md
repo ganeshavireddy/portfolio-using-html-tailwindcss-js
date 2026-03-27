@@ -1,6 +1,6 @@
- 
-# Durga Venkata
-Ganesh | Personal Portfolio 🚀
+# Durga Venkata Ganesh | Personal Portfolio 🚀
+
+**🌐 Live Demo:** [https://portfolio-using-html-tailwindcss-js.vercel.app/](https://portfolio-using-html-tailwindcss-js.vercel.app/)
 
 A modern, high-performance personal portfolio built to showcase my projects, skills, and experience as a Full-Stack Software Engineer. Designed with a sleek dark theme, glassmorphism UI, and smooth scroll animations.
 
@@ -25,8 +25,6 @@ This project is built using vanilla web technologies to remain lightweight and f
 * **Material Symbols** - Google's modern icon library
 
 ## 📂 Project Structure
-
-The project is organized into clean, separated concerns:
 
 ```text
 /
