@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Durga Ganesh | Full Stack Architect</title>
+    
+    <script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1" rel="stylesheet"/>
+    
+    <link rel="stylesheet" href="style.css">
+
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#6366F1",
+                        "surface": "#050b18",
+                        "surface-container": "#0b1121",
+                        "secondary": "#94a3b8",
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="blob w-[500px] h-[500px] bg-indigo-600 top-[-100px] left-[-100px] animate-float"></div>
+    <div class="blob w-[400px] h-[400px] bg-emerald-600 bottom-[-100px] right-[-100px] animate-float" style="animation-delay: -5s;"></div>
+
+    <nav class="fixed top-0 w-full z-50 glass-card border-b border-white/5">
+        <div class="flex justify-between items-center max-w-7xl mx-auto px-8 py-4">
+            <div class="text-2xl font-black tracking-tighter text-primary">DG<span class="text-white">.</span></div>
+            <button class="md:hidden text-white"><span class="material-symbols-outlined">menu</span></button>
+            
+            <div class="hidden md:flex items-center gap-8 font-bold text-xs uppercase tracking-widest text-secondary">
+                <a class="hover:text-primary transition-colors" href="#home">Home</a>
+                <a class="hover:text-primary transition-colors" href="#skills">Skills</a>
+                <a class="hover:text-primary transition-colors" href="#education">Education</a>
+                <a class="hover:text-primary transition-colors" href="#projects">Work</a>
+                <a class="hover:text-primary transition-colors" href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="min-h-screen flex items-center px-8 pt-20 max-w-7xl mx-auto" id="home">
+            <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center w-full">
+                
+                <div class="flex justify-center items-center order-first lg:order-last">
+                    <div class="relative group animate-float">
+                        <div class="absolute -inset-6 bg-indigo-500/10 blur-[90px] rounded-full group-hover:bg-indigo-500/20 transition-all duration-700"></div>
+                        <div class="relative overflow-hidden rounded-full aspect-square w-full max-w-[280px] lg:max-w-[340px] border-[4px] border-primary/20 shadow-2xl transition-transform duration-700 group-hover:scale-[1.03] group-hover:-rotate-2 group-hover:shadow-primary/40 bg-surface-container p-2">
+                             <img src="profile.jpg" alt="Durga Ganesh Profile" class="w-full h-full object-cover rounded-full group-hover:scale-105 transition-transform duration-1000">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="space-y-6 text-center lg:text-left">
+                    <span class="text-primary font-bold tracking-[0.3em] uppercase text-sm">Full-Stack Engineer</span>
+                    <h1 class="text-6xl md:text-8xl font-black text-white leading-tight">DURGA<br/><span class="text-primary">GANESH</span></h1>
+                    <p class="text-xl text-secondary max-w-xl mx-auto lg:mx-0">Building robust, scalable applications with the MERN stack and exploring data with Python.</p>
+                    
+                    <div class="flex flex-wrap gap-4 pt-6 justify-center lg:justify-start">
+                        <a href="#projects" class="bg-primary px-8 py-4 rounded-full font-bold text-white hover:scale-105 transition-all shadow-lg shadow-primary/20">
+                            View Work
+                        </a>
+                        <a href="ganesh_mern resume.pdf" target="_blank" class="px-8 py-4 rounded-full font-bold text-white border border-white/10 hover:border-primary/50 hover:bg-primary/10 transition-all flex items-center gap-2">
+                            <span class="material-symbols-outlined text-lg">visibility</span> View Resume
+                        </a>
+                        <a href="https://github.com/ganeshavireddy" target="_blank" class="px-8 py-4 rounded-full font-bold text-white border border-white/10 hover:bg-white/5 transition-all flex items-center gap-2">
+                            <span class="material-symbols-outlined text-lg">code</span> GitHub
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="py-32 max-w-7xl mx-auto px-8" id="skills">
+            <div class="mb-16">
+                <h2 class="text-5xl font-black text-white mb-4 italic">Technical Skills</h2>
+                <div class="h-1 w-20 bg-primary"></div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="p-8 rounded-[2rem] bg-surface-container border border-indigo-500/20 hover:border-indigo-500/40 transition-colors shadow-lg">
+                    <div class="flex items-center gap-4 mb-8">
+                        <div class="w-12 h-12 flex items-center justify-center bg-indigo-500/10 rounded-xl border border-indigo-500/20">
+                            <span class="material-symbols-outlined text-indigo-400">data_object</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white">Frontend</h3>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-center p-4 rounded-xl bg-surface border border-white/5">
+                            <span class="text-white font-medium text-sm">React & Next.js</span>
+                            <span class="text-[10px] font-black tracking-widest text-indigo-400 uppercase">Advanced</span>
+                        </div>
+                        <div class="flex justify-between items-center p-4 rounded-xl bg-surface border border-white/5">
+                            <span class="text-white font-medium text-sm">JavaScript/TS</span>
+                            <span class="text-[10px] font-black tracking-widest text-indigo-400 uppercase">Expert</span>
+                        </div>
+                        <div class="flex justify-between items-center p-4 rounded-xl bg-surface border border-white/5">
+                            <span class="text-white font-medium text-sm">Tailwind CSS</span>
+                            <span class="text-[10px] font-black tracking-widest text-indigo-400 uppercase">Expert</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="p-8 rounded-[2rem] bg-surface-container border border-emerald-500/20 hover:border-emerald-500/40 transition-colors shadow-lg">
+                    <div class="flex items-center gap-4 mb-8">
+                        <div class="w-12 h-12 flex items-center justify-center bg-emerald-500/10 rounded-xl border border-emerald-500/20">
+                            <span class="material-symbols-outlined text-emerald-400">dns</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white">Backend</h3>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-center p-4 rounded-xl bg-surface border border-white/5">
+                            <span class="text-white font-medium text-sm">Node.js</span>
+                            <span class="text-[10px] font-black tracking-widest text-emerald-400 uppercase">Master</span>
+                        </div>
+                        <div class="flex justify-between items-center p-4 rounded-xl bg-surface border border-white/5">
+                            <span class="text-white font-medium text-sm">Express.js</span>
+                            <span class="text-[10px] font-black tracking-widest text-emerald-400 uppercase">Expert</span>
+                        </div>
+                        <div class="flex justify-between items-center p-4 rounded-xl bg-surface border border-white/5">
+                            <span class="text-white font-medium text-sm">Python</span>
+                            <span class="text-[10px] font-black tracking-widest text-emerald-400 uppercase">Proficient</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="p-8 rounded-[2rem] bg-surface-container border border-slate-500/20 hover:border-slate-500/40 transition-colors shadow-lg">
+                    <div class="flex items-center gap-4 mb-8">
+                        <div class="w-12 h-12 flex items-center justify-center bg-slate-500/10 rounded-xl border border-slate-500/20">
+                            <span class="material-symbols-outlined text-slate-400">database</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white">Database</h3>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-center p-4 rounded-xl bg-surface border border-white/5">
+                            <span class="text-white font-medium text-sm">MongoDB</span>
+                            <span class="text-[10px] font-black tracking-widest text-slate-400 uppercase">Expert</span>
+                        </div>
+                        <div class="flex justify-between items-center p-4 rounded-xl bg-surface border border-white/5">
+                            <span class="text-white font-medium text-sm">MySQL</span>
+                            <span class="text-[10px] font-black tracking-widest text-slate-400 uppercase">Advanced</span>
+                        </div>
+                        <div class="flex justify-between items-center p-4 rounded-xl bg-surface border border-white/5">
+                            <span class="text-white font-medium text-sm">SQLite</span>
+                            <span class="text-[10px] font-black tracking-widest text-slate-400 uppercase">Proficient</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-32 bg-surface-container/30 border-y border-white/5" id="education">
+            <div class="max-w-7xl mx-auto px-8">
+                <div class="grid lg:grid-cols-12 gap-16">
+                    <div class="lg:col-span-5 space-y-6">
+                        <h2 class="text-5xl font-black text-white italic">Education</h2>
+                        <div class="h-1 w-20 bg-primary"></div>
+                        <p class="text-secondary text-lg leading-relaxed mt-6">My academic journey establishing a strong foundation in Computer Science, AI, and Machine Learning.</p>
+                    </div>
+                    
+                    <div class="lg:col-span-7">
+                        <div class="border-l-2 border-primary/30 pl-8 space-y-12 relative">
+                            <div class="relative group">
+                                <div class="absolute -left-[41px] top-1 w-5 h-5 rounded-full bg-surface border-4 border-primary group-hover:bg-primary transition-colors"></div>
+                                <div class="space-y-2">
+                                    <span class="text-xs font-black text-primary uppercase tracking-widest">2022 - 2026</span>
+                                    <h3 class="text-2xl font-bold text-white">B.Tech in CSE (AI & ML)</h3>
+                                    <p class="text-lg font-medium text-secondary italic">Sri Venkateswara College of Engineering and Technology</p>
+                                    <div class="inline-block mt-2 px-3 py-1 rounded-md bg-white/5 border border-white/10 text-primary font-bold text-sm">
+                                        CGPA: 8.04/10
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="relative group">
+                                <div class="absolute -left-[41px] top-1 w-5 h-5 rounded-full bg-surface border-4 border-primary group-hover:bg-primary transition-colors"></div>
+                                <div class="space-y-2">
+                                    <span class="text-xs font-black text-primary uppercase tracking-widest">2020 - 2022</span>
+                                    <h3 class="text-2xl font-bold text-white">Intermediate (MPC)</h3>
+                                    <p class="text-lg font-medium text-secondary italic">Sri Chaitanya Junior College</p>
+                                    <div class="inline-block mt-2 px-3 py-1 rounded-md bg-white/5 border border-white/10 text-primary font-bold text-sm">
+                                        Score: 67%
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="relative group">
+                                <div class="absolute -left-[41px] top-1 w-5 h-5 rounded-full bg-surface border-4 border-primary group-hover:bg-primary transition-colors"></div>
+                                <div class="space-y-2">
+                                    <span class="text-xs font-black text-primary uppercase tracking-widest">2019 - 2020</span>
+                                    <h3 class="text-2xl font-bold text-white">SSC</h3>
+                                    <p class="text-lg font-medium text-secondary italic">High School, Narayanapuram</p>
+                                    <div class="inline-block mt-2 px-3 py-1 rounded-md bg-white/5 border border-white/10 text-primary font-bold text-sm">
+                                        Score: 85%
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-32 max-w-7xl mx-auto px-8" id="projects">
+            <div class="mb-16">
+                <h2 class="text-5xl font-black text-white mb-4 italic">Featured Work</h2>
+                <div class="h-1 w-20 bg-primary"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-[#0b1120] rounded-[2rem] border border-white/5 overflow-hidden group hover:border-primary/30 transition-all shadow-xl flex flex-col">
+                    <div class="h-48 w-full bg-gradient-to-br from-indigo-900 to-[#0b1120] relative overflow-hidden flex items-center justify-center">
+                        <span class="material-symbols-outlined text-6xl text-white/20 group-hover:scale-110 transition-transform duration-500">local_hospital</span>
+                    </div>
+                    <div class="p-8 flex flex-col flex-grow">
+                        <div class="flex flex-wrap gap-2 mb-5">
+                            <span class="px-3 py-1 bg-[#1a2235] text-indigo-300 rounded-full text-[9px] font-black tracking-widest uppercase">REACT</span>
+                            <span class="px-3 py-1 bg-[#1a2235] text-indigo-300 rounded-full text-[9px] font-black tracking-widest uppercase">NODE.JS</span>
+                            <span class="px-3 py-1 bg-[#1a2235] text-indigo-300 rounded-full text-[9px] font-black tracking-widest uppercase">EXPRESS</span>
+                        </div>
+                        <h3 class="text-3xl font-bold text-white mb-3 tracking-tight">Hospital Dashboard</h3>
+                        <p class="text-secondary text-sm leading-relaxed mb-8 flex-grow">A complete hospital management system for managing patients, doctors, and appointments seamlessly.</p>
+                        <div class="flex gap-4">
+                            <a href="#" class="flex-1 bg-indigo-500 hover:bg-indigo-400 text-white py-3 rounded-xl font-bold text-sm text-center flex items-center justify-center gap-2 transition-colors">
+                                <span class="material-symbols-outlined text-[18px]">rocket_launch</span> Launch Live
+                            </a>
+                            <a href="https://github.com/ganeshavireddy/Hospital-Dashboard" target="_blank" class="flex-1 bg-transparent border border-white/10 hover:border-white/30 text-white py-3 rounded-xl font-bold text-sm text-center flex items-center justify-center transition-colors">
+                                View Source
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-[#0b1120] rounded-[2rem] border border-white/5 overflow-hidden group hover:border-primary/30 transition-all shadow-xl flex flex-col">
+                    <div class="h-48 w-full bg-gradient-to-br from-teal-900 to-[#0b1120] relative overflow-hidden flex items-center justify-center">
+                        <span class="material-symbols-outlined text-6xl text-white/20 group-hover:scale-110 transition-transform duration-500">analytics</span>
+                    </div>
+                    <div class="p-8 flex flex-col flex-grow">
+                        <div class="flex flex-wrap gap-2 mb-5">
+                            <span class="px-3 py-1 bg-[#1a2235] text-indigo-300 rounded-full text-[9px] font-black tracking-widest uppercase">PYTHON</span>
+                            <span class="px-3 py-1 bg-[#1a2235] text-indigo-300 rounded-full text-[9px] font-black tracking-widest uppercase">PANDAS</span>
+                            <span class="px-3 py-1 bg-[#1a2235] text-indigo-300 rounded-full text-[9px] font-black tracking-widest uppercase">DATA</span>
+                        </div>
+                        <h3 class="text-3xl font-bold text-white mb-3 tracking-tight">Social Media Impact</h3>
+                        <p class="text-secondary text-sm leading-relaxed mb-8 flex-grow">Data analysis project exploring the deep correlation between social media addiction and relationship dynamics.</p>
+                        <div class="flex gap-4">
+                            <a href="#" class="flex-1 bg-indigo-500 hover:bg-indigo-400 text-white py-3 rounded-xl font-bold text-sm text-center flex items-center justify-center gap-2 transition-colors">
+                                <span class="material-symbols-outlined text-[18px]">rocket_launch</span> Launch Live
+                            </a>
+                            <a href="https://github.com/ganeshavireddy/social-media-addition-and-relationship-impact-analysis" target="_blank" class="flex-1 bg-transparent border border-white/10 hover:border-white/30 text-white py-3 rounded-xl font-bold text-sm text-center flex items-center justify-center transition-colors">
+                                View Source
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-[#0b1120] rounded-[2rem] border border-white/5 overflow-hidden group hover:border-primary/30 transition-all shadow-xl flex flex-col">
+                    <div class="h-48 w-full bg-gradient-to-br from-blue-900 to-[#0b1120] relative overflow-hidden flex items-center justify-center">
+                        <span class="material-symbols-outlined text-6xl text-white/20 group-hover:scale-110 transition-transform duration-500">partly_cloudy_day</span>
+                    </div>
+                    <div class="p-8 flex flex-col flex-grow">
+                        <div class="flex flex-wrap gap-2 mb-5">
+                            <span class="px-3 py-1 bg-[#1a2235] text-indigo-300 rounded-full text-[9px] font-black tracking-widest uppercase">HTML/CSS</span>
+                            <span class="px-3 py-1 bg-[#1a2235] text-indigo-300 rounded-full text-[9px] font-black tracking-widest uppercase">JS</span>
+                            <span class="px-3 py-1 bg-[#1a2235] text-indigo-300 rounded-full text-[9px] font-black tracking-widest uppercase">API</span>
+                        </div>
+                        <h3 class="text-3xl font-bold text-white mb-3 tracking-tight">Weather Dashboard</h3>
+                        <p class="text-secondary text-sm leading-relaxed mb-8 flex-grow">A responsive dashboard providing real-time weather metrics and forecasting using external APIs.</p>
+                        <div class="flex gap-4">
+                            <a href="#" class="flex-1 bg-indigo-500 hover:bg-indigo-400 text-white py-3 rounded-xl font-bold text-sm text-center flex items-center justify-center gap-2 transition-colors">
+                                <span class="material-symbols-outlined text-[18px]">rocket_launch</span> Launch Live
+                            </a>
+                            <a href="https://github.com/ganeshavireddy/Dynamic-Wheather-Dashboard" target="_blank" class="flex-1 bg-transparent border border-white/10 hover:border-white/30 text-white py-3 rounded-xl font-bold text-sm text-center flex items-center justify-center transition-colors">
+                                View Source
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-32 bg-surface-container/30 border-t border-white/5" id="contact">
+            <div class="max-w-3xl mx-auto px-8">
+                <div class="glass-card p-10 md:p-16 rounded-[2.5rem] border border-white/5 shadow-2xl relative overflow-hidden">
+                    
+                    <div class="absolute -top-20 -right-20 w-64 h-64 bg-primary/20 rounded-full blur-[80px] pointer-events-none"></div>
+
+                    <form class="space-y-12 relative z-10">
+                        <div class="group border-b border-white/10 focus-within:border-primary transition-colors pb-3">
+                            <label class="block text-[10px] font-black uppercase tracking-[0.3em] text-primary mb-3">Identification</label>
+                            <input class="w-full bg-transparent border-none focus:ring-0 p-0 text-xl md:text-2xl font-bold text-white placeholder:text-white/10 outline-none" placeholder="Your Name" type="text" />
+                        </div>
+
+                        <div class="group border-b border-white/10 focus-within:border-primary transition-colors pb-3">
+                            <label class="block text-[10px] font-black uppercase tracking-[0.3em] text-primary mb-3">Electronic Address</label>
+                            <input class="w-full bg-transparent border-none focus:ring-0 p-0 text-xl md:text-2xl font-bold text-white placeholder:text-white/10 outline-none" placeholder="email@domain.com" type="email" />
+                        </div>
+
+                        <div class="group border-b border-white/10 focus-within:border-primary transition-colors pb-3">
+                            <label class="block text-[10px] font-black uppercase tracking-[0.3em] text-primary mb-3">The Vision</label>
+                            <textarea class="w-full bg-transparent border-none focus:ring-0 p-0 text-xl md:text-2xl font-bold text-white placeholder:text-white/10 outline-none resize-none" placeholder="Describe the project..." rows="3"></textarea>
+                        </div>
+
+                        <button type="button" class="w-full bg-[#6366f1] hover:bg-[#5355e1] py-5 rounded-xl font-bold text-white text-lg transition-all flex items-center justify-center gap-3 shadow-[0_0_20px_rgba(99,102,241,0.2)] hover:shadow-[0_0_30px_rgba(99,102,241,0.4)]">
+                            Initiate Transmission <span class="material-symbols-outlined text-xl">send</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="py-12 border-t border-white/5 bg-surface">
+        <div class="max-w-7xl mx-auto px-8 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="text-xl font-black text-primary">DG.</div>
+            <p class="text-secondary text-sm tracking-wide">© 2026 Durga Ganesh. All Systems Operational.</p>
+            <div class="flex gap-6 text-xs uppercase font-bold tracking-widest text-secondary">
+                <a href="https://github.com/ganeshavireddy" target="_blank" class="hover:text-primary transition-colors">GitHub</a>
+                <a href="https://www.linkedin.com/in/ganesh-avireddy/" class="hover:text-primary transition-colors">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
